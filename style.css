@@ -1,0 +1,111 @@
+#atm{
+    position: relative;
+    border: 10px;
+    border-color: darkslategrey;
+    border-style: solid;
+    width: 50vw;
+    height: 95vh;
+    margin: auto;
+}
+
+#topPanel{
+    background-color:darkslategrey;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 10px;
+    border-bottom: darkslategrey solid 10px;
+    width: 100%;
+    height: calc(30% - 10px);
+}
+
+#display {
+    background-color: lightgray;
+    padding-left: 15px;
+    overflow-y: auto;   
+}
+
+#message {
+    border: solid 2px black;
+    margin-right: 10px;
+    background: white;
+    height: 50%;
+    text-align: center;
+}
+
+#cardDetector{
+    background-color: lightgray;
+    text-align: center;
+}
+
+#cardSlot{
+    width: 75%;
+    margin: auto;
+    height: 15px;
+    background-color: black;
+    border-color: darkgray;
+    border: 5px;
+    border-style: inset;
+}
+
+#simulatedCards{
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    border: 5px;
+    height: 40px;
+    background-color: rgb(117, 117, 117);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    padding: 5px;
+}
+
+#lowerPanel{
+    background-color: rgb(117, 117, 117);
+    position: relative;
+    padding-top: 20px;
+    width: 100%;
+    height: calc(75% - 30px);
+}
+
+#pinField{
+    width: 75%;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 40px;
+    background-color: lightgray;
+    border:darkgrey ridge 5px;
+    text-align: center;
+    font-size: 16pt;
+}
+
+#keypadArea{
+    margin: auto;
+    margin-top: 10px;
+    display: grid;
+    width: 75%;
+    height: 50%;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.keypadButton{
+    font-size: 16pt;
+    font-weight: bold;
+    border: darkgrey outset 5px;
+}
+
+#enter{
+    grid-column: 1 / span 2  ;
+}
+
+#cashDispenser{
+    width: 75%;
+    margin: auto;
+    height: 15px;
+    margin-top: 30px;
+    background-color: black;
+    border:darkgrey 5px inset;
+    text-align: center;
+}
+

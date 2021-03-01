@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ATM Demo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id='atm'>
+        <div id='topPanel'>
+            <div id='display'>
+                <h2>MARCEL ATM System</h2>
+                <p id='message'></p>
+                <div id="time-display"></div>
+            </div>
+
+            <div id='cardDetector'>
+                <h2>Insert Card Here</h1>
+                <div id='cardSlot'></div>
+                <div id='simulatedCards'>
+                    <button id='C1' onClick='insertCard(card1)'>C1</button>
+                    <button id='C2' onClick='insertCard(card2)'>C2</button>
+                    <button id='C3' onClick='insertCard(card3)'>C3</button>
+                </div>
+            </div>
+
+        </div>
+        <div id='lowerPanel'>
+            <div id='pinField'></div>
+
+            <div id='keypadArea'>
+                <button class='keypadButton' id='1' onClick='numberInput(1)'>1</button>
+                <button class='keypadButton' id='2' onClick='numberInput(2)'>2</button>
+                <button class='keypadButton' id='3' onClick='numberInput(3)'>3</button>
+                <button class='keypadButton' id='4' onClick='numberInput(4)'>4</button>
+                <button class='keypadButton' id='5' onClick='numberInput(5)'>5</button>
+                <button class='keypadButton' id='6' onClick='numberInput(6)'>6</button>
+                <button class='keypadButton' id='7' onClick='numberInput(7)'>7</button>
+                <button class='keypadButton' id='8' onClick='numberInput(8)'>8</button>
+                <button class='keypadButton' id='9' onClick='numberInput(9)'>9</button>                                    
+                <button class='keypadButton' id='.' onClick='numberInput(".")'>.</button>                                                                        
+                <button class='keypadButton' id='0' onClick='numberInput(0)'>0</button>
+                <button class='keypadButton' id='back' onClick='backspace()'>&#8592</button>                                                                        
+                <button class='keypadButton' id='enter' onClick='enterButton()'>Enter</button>
+                <button class='keypadButton' id='cancel' onClick='cancelButton()'>Cancel</button>
+            </div>
+
+            <div id='cashDispenser'></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="atm.js"></script>
+</body>
+</html>
